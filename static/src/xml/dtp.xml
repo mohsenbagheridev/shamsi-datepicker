@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="web.datepicker">
+        <t t-set="placeholder" t-value="widget.getParent().node and widget.getParent().node.attrs.placeholder"/>
+        <t t-set="datepickerID" t-value="_.uniqueId('o_field_input_')"/>
+        <div class="dtpicker_parent">
+            <div class="o_datepicker">
+              <div class="input-group">
+              <div class="input-group-prepend">
+              <span class="input-group-text cursor-pointer" t-att-id="datepickerID+1">Fa</span>
+              </div>
+                <input type="text"
+                     class="form-control o_datepicker_input o_input datetimepicker-input oe_datepicker_control"
+                     t-att-name="widget.name"
+                     autocomplete="none"
+                     t-att-placeholder="placeholder"
+                     t-att-data-target="datepickerID"
+                />
+
+                <label t-att-id="datepickerID+3" class="dtplab" style="color: #4c3668; font-size: 15px; margin-top: 5px;"> </label>
+                </div>
+
+            </div>
+        </div>
+    </t>
+</templates>

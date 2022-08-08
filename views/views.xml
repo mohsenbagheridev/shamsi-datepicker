@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+    <template id="assets_backend" name="shams_dtp assets" inherit_id="web.assets_backend">
+      <xpath expr="." position="inside">
+        <link rel="stylesheet" type="text/css" href="/shams_dtp/static/src/css/dtp.css"/>
+      </xpath>
+    </template>
+  </data>
+</odoo>

@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+      <template id="assets_backend_1" name="shams_dtp after" inherit_id="web.assets_backend">
+      <xpath expr = "." Position = "after">
+              <script type="text/javascript" src="/shams_dtp/static/src/js/dtp.js" ></script>
+      </xpath>
+      </template>
+    </data>
+</odoo>
